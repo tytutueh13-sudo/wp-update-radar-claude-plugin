@@ -1,4 +1,20 @@
-# WP Update Radar for Claude
+# WP Update Radar
+
+## Install in Cursor
+
+This repository is a Cursor Plugin as well as a Claude plugin. In Cursor,
+install it from the Marketplace once it is approved, or add the remote MCP
+endpoint below to a local `mcp.json` while the public beta is under review:
+
+```json
+{
+  "mcpServers": {
+    "wp-update-radar": {
+      "url": "https://updates.utilityhouse.xyz/mcp/cursor"
+    }
+  }
+}
+```
 
 WP Update Radar adds two free, remote MCP tools for one narrow question:
 whether public wordpress.org support-forum activity for an exact plugin release

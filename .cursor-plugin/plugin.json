@@ -1,0 +1,10 @@
+{
+  "name": "wp-update-radar",
+  "version": "1.0.0",
+  "description": "Read bounded public-forum evidence before updating a WordPress plugin.",
+  "author": { "name": "UtilityHouse" },
+  "homepage": "https://updates.utilityhouse.xyz",
+  "repository": "https://github.com/tytutueh13-sudo/wp-update-radar-claude-plugin",
+  "keywords": ["wordpress", "plugin-updates", "evidence", "mcp"],
+  "mcpServers": "mcp.json"
+}
