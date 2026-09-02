@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wp-update-radar": {
+      "type": "http",
+      "url": "https://updates.utilityhouse.xyz/mcp/claude"
+    }
+  }
+}
