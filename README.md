@@ -27,9 +27,15 @@ credential, or site access.
 
 - Checks one public wordpress.org plugin release.
 - Checks up to 25 public wordpress.org plugin releases in one call.
-- Returns the supporting forum threads and a bounded verdict.
-- Returns `insufficient-data` or an error instead of guessing when coverage is
-  not sufficient.
+- Returns an action state, observed signal, supporting threads, coverage,
+  freshness, reason codes, and explicit unknowns.
+- Returns `NOT_ENOUGH_EVIDENCE` or an error instead of guessing when coverage
+  is not sufficient.
+
+The action states are `HOLD`, `WAIT`, `GUARDED_ROLLOUT`, and
+`NOT_ENOUGH_EVIDENCE`. `GUARDED_ROLLOUT` means no elevated public signal was
+observed; it is not a compatibility guarantee and still calls for staging,
+backup, and rollback controls.
 
 ## What it does not do
 

@@ -10,11 +10,14 @@ Use `wp_update_radar_check` for one plugin and exact release. Use
 (up to 25).
 
 Treat the result as bounded public-community evidence, never as a guarantee.
+Prefer `state`, `signal`, `reasonCodes`, `coverage`, `freshness`, and `unknowns`
+over the legacy `verdict` field.
 
-- `known-bad` and `wait` are reasons to pause and investigate.
-- `update-now` means the observed forum volume is not unusual for that plugin;
-  it does not prove the user's site is safe.
-- `too-new` and `insufficient-data` mean the tool does not know enough yet.
+- `HOLD` and `WAIT` are reasons to pause and investigate.
+- `GUARDED_ROLLOUT` means no elevated public signal was observed; stage, back
+  up, and retain a rollback path.
+- `NOT_ENOUGH_EVIDENCE` means the tool does not know enough to support a
+  reading.
 - A plugin outside the tracked index must remain unknown, not assumed safe.
 
 Do not use this tool as a CVE or malware check. Do not ask for WordPress

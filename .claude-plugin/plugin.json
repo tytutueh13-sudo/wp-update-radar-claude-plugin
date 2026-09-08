@@ -1,7 +1,7 @@
 {
   "name": "wp-update-radar",
-  "version": "1.0.0",
-  "description": "Read bounded public-forum evidence before updating a WordPress plugin.",
+  "version": "1.0.1",
+  "description": "Read linked public support evidence and explicit unknowns for a WordPress plugin release.",
   "author": { "name": "UtilityHouse" },
   "homepage": "https://updates.utilityhouse.xyz",
   "keywords": ["wordpress", "plugin-updates", "evidence", "mcp"]
